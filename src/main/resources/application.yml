@@ -1,0 +1,38 @@
+server:
+  port: 8081
+  servlet:
+    session:
+      timeout: 3m
+
+resource:
+  server:
+    url: http://localhost:8082
+
+
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          oauth-server:
+            client-name: Web App Client
+            client-id: public
+            client-secret:
+            authorization-grant-type: authorization_code
+#            scope: resource.read,resource.write,openid,profile
+            redirect-uri: http://127.0.0.1:8081/login/oauth2/code/oauth-server
+            scope: read
+            provider: oauthserver-provider
+        provider:
+          oauthserver-provider:
+#            issuer-uri: http://localhost:8080/oauth/token
+            token-uri: http://localhost:8080/oauth/token
+            authorization-uri: http://localhost:8080/oauth/authorize
+            user-info-uri: http://localhost:8080/ /userinfo
+            user-name-attribute: username
+logging:
+  level:
+    org:
+      springframework:
+        web: DEBUG
+        security: DEBUG

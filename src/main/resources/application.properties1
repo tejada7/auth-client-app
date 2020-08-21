@@ -1,0 +1,21 @@
+server.port=8081
+logging.level.org.springframework.security=DEBUG
+resource.server.url=http://localhost:8082
+
+spring.security.oauth2.client.registration.uaa.client-name=Web App Client
+spring.security.oauth2.client.registration.uaa.client-id=webappclient
+spring.security.oauth2.client.registration.uaa.client-secret=webappclientsecret
+spring.security.oauth2.client.registration.uaa.scope=resource.read,resource.write,openid,profile
+
+spring.security.oauth2.client.provider.uaa.issuer-uri=http://localhost:8080/uaa/oauth/token
+spring.security.oauth2.client.registration.
+
+#AmQlbpHs0vBBnqTep1rCISnA
+#kmdfksXV1kMIrhIkYbZEfXnhM1x4FuDD9y5yB-ugUu-CYe_J
+
+#lovely-crossbill@example.com
+#Average-Hamerkop-37
+
+#Code evrifier: Bpyz7VmadSzODbYHRHL3vPOkiuIz11AsLgj-kqmshktfM_cP
+
+# Code Challenge: bhM-bmYLSxZRl585OreB_n4D38-grXtwWxkY-jqNSr0
